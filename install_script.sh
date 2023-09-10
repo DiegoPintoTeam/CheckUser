@@ -17,7 +17,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 nvm install 16
 npm install pm2 -g
-npm install
 
 #SETCONFIG FUNCAO
 set_config () {
