@@ -6,16 +6,14 @@ sudo apt-get update
 sudo apt-get install curl
 apt install nodejs
 apt install npm
-cd /etc
-mkdir checkuser;
-clear;
-chmod +x iptables.sh;
 cd /etc/checkuser
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 nvm install 16
+npm install pm2 -g
+npm install
 
 #SETCONFIG FUNCAO
 set_config () {
