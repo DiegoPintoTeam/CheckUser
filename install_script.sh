@@ -2,15 +2,12 @@
 #INSTALA PACOTES
 echo -ne "\033[1;32m INSTALADOR CHECKUSER FREE...\033[1;37m ";
 sleep 5;
-cd /root;
-apt-get update;
-apt-get install git -y;
-apt-get install cron -y;
-apt-get install screen -y;
-apt-get install npm -y;
-apt-get install nodejs -y;
-git clone https://github.com/DiegoPintoTeam/checkuser/tree/main;
-cd /root/checkuser;
+sudo apt-get update
+sudo apt-get install curl
+apt install nodejs
+apt install npm
+cd /etc
+mkdir checkuser;
 clear;
 chmod +x iptables.sh;
 ./iptables.sh;
