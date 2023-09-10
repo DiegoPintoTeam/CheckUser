@@ -10,16 +10,14 @@ cd /etc
 mkdir checkuser;
 clear;
 chmod +x iptables.sh;
-./iptables.sh;
-chmod +x startcheck.sh;
-wget https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh
-chmod +x install.sh;
-./install.sh
-source ~/.bashrc;
-source ~/.nvm/nvm.sh;
-#git clone http://github.com/creationix/nvm.git .nvm;
-nvm install 16.4.2;
-npm install;
+cd /etc/checkuser
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+nvm install 16
+npm install pm2 -g
+npm install
 
 #SETCONFIG FUNCAO
 set_config () {
