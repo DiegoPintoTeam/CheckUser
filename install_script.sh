@@ -6,6 +6,9 @@ sudo apt-get update
 sudo apt-get install curl
 apt install nodejs
 apt install npm
+cd /etc
+mkdir checkuser;
+clear;
 cd /etc/checkuser
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
