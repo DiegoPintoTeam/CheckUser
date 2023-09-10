@@ -9,7 +9,7 @@ apt-get install cron -y;
 apt-get install screen -y;
 apt-get install npm -y;
 apt-get install nodejs -y;
-git clone https://github.com/Andley302/CheckUser.git;
+git clone https://github.com/DiegoPintoTeam/checkuser.git;
 cd /root/checkuser;
 clear;
 chmod +x iptables.sh;
